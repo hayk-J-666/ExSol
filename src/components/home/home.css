@@ -1,0 +1,341 @@
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.homeVideoDiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 1000;
+}
+.videoDiv{
+    max-width: 1000px;
+    width: 90%;
+    position: relative;
+}
+.closeVideo{
+    width: 45px;
+    height: 45px;
+    background: #2F73F6;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    margin-top: -22.5px;
+    margin-right: -22.5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clossX1{
+    min-width: 29px;
+    height: 3px;
+    border-radius: 2px;
+    /* margin-top: -2px; */
+    background: white;
+    transform: rotate(45deg);
+    position: absolute;
+}
+.clossX2{
+    min-width: 29px;
+    height: 3px;
+    border-radius: 2px;
+    /* margin-top: -2px; */
+    background: white;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+.videoDiv{
+    width: 90vmin;
+    height: 50vmin;
+}
+.videoDiv>iframe{
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    z-index: 1;
+}
+.homeVideoDivActiv{
+    display: none;
+}
+.homeVideoDiv  #viewer{
+    width: 100%;
+    height: 88%;
+    display: flex;
+    align-items: center;
+}
+.homeVideoDiv  #viewer iframe{
+    width: 50%;
+    margin: 0 auto;
+}
+.aboutTextDiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 1000;
+}
+.aboutTextDivActiv{
+    display: none;
+}
+.animationBox{
+    width: 89%;
+    margin: 0 auto;
+    /* margin-bottom: 60px; */
+    animation-name: EXSOL;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.backBtn{
+    width: 200px;
+    background: white;
+    margin-bottom: 100px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+.header_Buttons{
+    display: flex;
+}
+.animationAbout{
+  animation-name: ExSOL;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.animationAboutActive{
+    display: none;
+}
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content:flex-end ;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../../../src/images/Frame13.svg);
+    /* background-color: black; */
+    background-position:  center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.header_Div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 100px;
+    /* height: calc(100vh - 190px); */
+}
+.header_Div__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homePage{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.titalesHome{
+    font-size: 60px;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+.titleShadowDiv{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.titales{
+    text-align: center;
+    font-size: 47px;
+    margin: 0;
+    margin-top: 40px;
+    z-index: 2;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+.tital_shadow{
+    text-align: center;
+    font-size: 57px;
+    bottom: 25px;
+    left: calc(50% - 175px);
+    margin: 0;
+    z-index: 1;
+    color: white;
+    opacity: .1;
+    position: absolute;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+.titaleDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textShadow{
+    font-size: 80px;
+    margin-top: -10px;
+    margin-left: -120px;
+    color: white;
+    opacity: .05;
+    position: absolute;
+    cursor: default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.offer_text{
+    font-size: 30px;
+    margin-bottom: 60px;
+    margin-top: 3px;
+    text-align: center;
+    padding: 0 30px;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+.titaleLine{
+    display: flex;
+    flex-direction: column;
+}
+.titaleLine .titales{
+    margin-bottom: 10px;
+}
+.titaleLine img{
+    width: 120px;
+}
+.blue_Button, .red_Button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    background: linear-gradient(269.55deg, #2F73F6 3.09%, #449DF8 90.46%);
+    cursor: pointer;
+    z-index: 5;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    outline: none;
+}
+
+.blue_Button:hover, .red_Button:hover {
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,1);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,1);
+    box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,1);
+    -webkit-mask-image: linear-gradient(-75deg, rgb(0, 183, 255, .85) 30%, rgba(255, 255, 255, 1) 50%, rgba(34, 137, 255, .85) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+
+}
+.red_Button a, .blue_Button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    list-style: none;
+}
+.ggg{
+    width: 300px;
+    margin: 0 auto;
+    top: 500px;
+    right: 600px;
+}
+.red_Button{
+    background: linear-gradient(276.7deg, #F9A86D -12.08%, #F05361 55.99%, #B72563 135.29%), linear-gradient(276.7deg, #F9A86D -12.08%, #F05361 55.99%, #B72563 135.29%);
+}
+@keyframes EXSOL {
+    0%{
+        display: none;
+    }
+    100% {
+        opacity: block;
+    }
+}
+
+@media all and (max-width:1200px){
+    .wrapper{
+        width: 100%;
+    }
+}
+@media all and (max-width:1200px){
+    .titales{
+        font-size: 30px;
+    }
+    .tital_shadow{
+        font-size: 35px;
+        left: calc(50% - 120px);
+        bottom: 10px;
+    }
+    .textShadow {
+        font-size: 60px;
+        margin-top: 10px;
+        margin-left: -100px;
+    }
+}
+
+@media all and (max-width:450px){
+    .titales{
+        font-size: 30px;
+    }
+    .textShadow {
+        font-size: 35px;
+        margin-top: 28px;
+        margin-left: -48px;
+        color: white;
+        opacity: .05;
+        position: absolute;
+        cursor: default;
+    }
+    .header_Buttons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .backBtn {
+        margin: 10px;
+    }
+    .titalesHome {
+        font-size: 30px;
+    }
+    .offer_text{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .header_Div{
+        margin-bottom: 90px;
+    }
+}

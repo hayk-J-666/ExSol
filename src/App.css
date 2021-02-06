@@ -1,0 +1,45 @@
+.page{
+    width: 100%;
+    /* height: calc(100vh - 60px); */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* background: red; */
+}
+.page-link{
+    cursor: pointer;
+}
+#routerContent{
+    background: #040515;
+}
+.particlesDiv{
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+.particles{
+    width: 100%;
+    height: calc(600vh - 60px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+}
+.particles div {
+    padding-top: 60px;
+    height: 100%;
+    opacity: .4;
+    min-width: calc((100% - 1200px) / 2);
+    max-width: calc((100% - 1200px) / 2);
+    z-index: 4;
+}
+
+.wrapper{
+    z-index: 2;
+}
+
+@media all and (max-width: 1200px){
+    .particlesDiv *{
+        display: none;
+    }
+}

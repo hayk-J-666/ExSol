@@ -1,0 +1,179 @@
+.particles_WhExchange {
+    width: 100%;
+    height: calc(100% - 60px);
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+}
+.particles_WhExchange div {
+    height: 100%;
+    opacity: .4;
+    min-width: calc((100% - 1200px) / 2);
+    max-width: calc((100% - 1200px) / 2);
+    z-index: 1;
+}
+#whExchange{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 70px;
+    /* margin-top: 50px; */
+}
+.exchangelogo{
+    position: absolute;
+    right: 0;
+    width: 40%;
+    max-width: 650px;
+}
+
+.exchangeText {
+    max-width: 1200px;
+    width: 100%;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    /* color: white; */
+}
+#whExchange span{
+    color:  #1A83FF;
+    font-size: 26px;
+}
+.exchangeText p{
+    max-width: calc(100% - 350px);
+    width: 100%;
+    color: white;
+    line-height: 25px;
+    font-size: 16px;
+    padding-left: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+#whExchange .titales{
+    text-align: left;
+}
+#whExchange .titaleLine {
+    width: 100%;
+}
+.exchangeGrup{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    /* padding-left: 100px; */
+    /* margin-left: 30px; */
+    margin-top: 70px;
+}
+.exchangeTitalDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 30px;
+}
+.blueLine{
+    width: 200px;
+    height: 4px;
+    margin-top: 10px;
+}
+.WhyExchange{
+    width: 100%;
+    max-width: 1200px;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    margin-top: 70px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+.WhyExchange .exchangeGrup{
+    margin: 0;
+}
+#whExchange .titaleDiv{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-left: 40px;
+}
+.howExchange{
+    max-width: 1200px;
+    width: 100%;
+    color: white;
+}
+.howExchangeText{
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+.exchangeGrup h3{
+    color: white;
+    font-size: 40px;
+    line-height: 42px;
+    margin: 0;
+}
+.WhyExchange1, .WhyExchange2, .WhyExchange3{
+    max-width: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.WhyExchange1 p{
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 70px;
+}
+.WhyExchange2{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.WhyExchange2 p{
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 70px;
+
+}
+.WhyExchange3{
+    margin-top: 30px;
+    margin-left: 200px;
+    max-width: 900px;
+    margin-bottom: 70px;
+    /* font-size: 16px; */
+    /* line-height: 25px; */
+}
+.WhyExchange3 p{
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 70px;
+
+}
+/* p{
+    color: white;
+} */
+@media all and (max-width:1220px){
+    #whExchange .titaleDiv{
+        padding-left: 20px;
+    }
+}
+@media all and (max-width:1200px){
+    .particles_WhExchangeDiv *{
+            display: none;
+        }
+        .exchangelogo{
+            width: 430px;
+        }
+        .exchangeText p{
+            max-width: calc(100% - 40px);
+            /* margin-right: 20px; */
+        }
+
+}
+@media all and (max-width:800px){
+    .WhyExchange1, .WhyExchange2, .WhyExchange3 {
+        margin-left: 20px;
+    }
+}

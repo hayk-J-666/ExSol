@@ -1,0 +1,271 @@
+#whiteLabel{
+    margin-top: 30px;
+    z-index: 100;
+}
+.titaleDiv{
+    z-index: 100;
+}
+.teenPattiText{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    z-index: 100;
+}
+.teenPattiText>.titaleLine>h1{
+    font-size: 30px;
+}
+.teenPText{
+    max-width: 55%;
+    /* margin: 15px; */
+    color: white;
+    line-height: 18px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.teenPattiPC{
+    position: absolute;
+    width: 50%;
+    top: 250px;
+    right: 0;
+    z-index: -1;
+}
+.teenNumber{
+    /* padding-left: 15px; */
+    color: white;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+#buyForm{
+    z-index: 100;
+}
+#buyForm .backBtn{
+    z-index: 100;
+}
+.writeUsDiv{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.writeUsTextDiv{
+    margin-top: 75px;
+    width: calc(40% - 40px);
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+.whiteLabel-writeUS{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.whiteLabel-writeUS>.titaleLine>h1{
+    text-align: left;
+    font-size: 30px;
+}
+.whiteLabel-writeUS>.titaleLine>p{
+    text-align: left;
+    max-width: 600px;
+    font-size: 18px;
+    padding-right: 20px;
+    color: white;
+}
+.buyNowForm{
+    width: calc(60% - 20px);
+    height: auto;
+    padding: 50px 0;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.buyNowForm p{
+    height: 33px;
+    max-width: calc(100% - 23px);
+    width: calc(100% - 12px);
+    color: #D7D7DA;
+    padding-left: 10px;
+    font-size: 13px;
+    margin: 0;
+}
+.buyInputs{
+    width: calc(100% - 10px);
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #337DF6;  
+    outline: none;
+    color: white;
+    padding-left: 10px;
+    margin-bottom: 50px;
+    transition: .33s;
+}
+.buyInputs:focus{
+    border-bottom: 1px solid #03A7D3 ;
+}
+.buyInputsArea{
+    max-width: calc(100% - 34px);
+    width: calc(100% - 12px);
+    min-height: 100px;
+    max-height: 250px;
+    height: auto;
+    resize: none;
+    min-width: calc(100% - 34px);
+    margin-bottom: 30px;
+    font-size: 15px;
+    background: none;
+    border: 1px solid #337DF6;  
+    outline: none;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: .33s;
+    z-index: 100;
+}
+.buyInputsArea:focus{
+    border: 1px solid #03A7D3 ;
+}
+.buyInputsArea::-webkit-scrollbar{
+    background: transparent;
+    max-width: 4px; 
+}
+  .buyInputsArea::-webkit-scrollbar-track{
+    width: 4px;
+    background: #040515;
+}
+  .buyInputsArea::-webkit-scrollbar-thumb{
+    background: #1A83FF;
+    width: 4px;
+    border-radius: 10px;
+}
+.buyInputs::placeholder {
+    color: #D7D7DA;
+}
+.buyInputs:-ms-input-placeholder{
+    color: #D7D7DA;
+}
+.buyInputs::-webkit-input-placeholder{
+    color: #D7D7DA;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+{
+  -webkit-text-fill-color: blue;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.inputs{
+    max-width: calc(100% - 12px);
+    width: calc(100% - 12px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    z-index: 100;
+}
+.inputs label{
+    top: 10px;
+    color: #D7D7DA;
+    height: 20px;
+    padding: 0 10px;
+    font-size: 13px;
+    position: absolute;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputs .buyInputs:focus ~ label,
+.inputs .buyInputs:valid ~ label,
+.inputs .buyInputs:-webkit-autofill ~ label { 
+    top: -15px;
+    font-size: 13px;
+}
+.inputs .buyInputs:focus ~ label{
+    color: white;
+    top: -15px;
+    font-size: 13px;
+}
+.productsMassigeDivActiv{
+    display: none;
+}
+.productsMassigeDiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,.75);
+    z-index: 1000;
+}
+.productMassige {
+    background: #000523;
+    color: #fff;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 30px 0 #91bee2;
+}
+.productMassige p {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 30px;
+    max-width: 750px;
+    text-align: center;
+    font-size: 22px;
+}
+@media all and (max-width:1270px){
+    
+    .whiteLabel-writeUS{padding-left: 20px;}
+    
+}
+@media all and (max-width:970px){
+    .writeUsDiv{
+        flex-direction: column;
+    }
+    .writeUsTextDiv{
+        max-width: 100%;
+        width: calc(100% - 40px);
+        padding: 0 20px;
+        margin-top: 0;
+    }
+    #buyForm{
+        margin: 0 auto;
+    }
+    /* .teenPText {
+        max-width: 55%;
+    } */
+}
+@media all and (max-width:730px){
+    .buyNowForm{
+           width: 100%;
+       }
+       .teenPText{
+           max-width: calc(100% - 40px);
+       }
+       .teenPattiPC{
+           display: none;
+       }
+}

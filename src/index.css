@@ -1,0 +1,69 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #040515;
+  /* background-image: url(./images/back2.jpg); */
+  background-size: cover ;
+  background-repeat: no-repeat;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.owl-carousel .owl-item img{
+  width: auto !important;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+body::-webkit-scrollbar{
+  background: transparent;
+  max-width: 4px;
+}
+body::-webkit-scrollbar-track{
+  width: 4px;
+  background: #040515;
+}
+body::-webkit-scrollbar-thumb{
+  background: #1A83FF;
+  width: 4px;
+  border-radius: 10px;
+
+}
+
+/* 
+@font-face{
+  src: url(../src/fonts/TitilliumWeb-Light_1.woff);
+  font-family: titi_Light;
+}
+@font-face{
+  src: url(../src/fonts/TitilliumWeb-Regular.woff);
+  font-family: titi_Reg;
+}
+@font-face{
+  src: url(../src/fonts/TitilliumWeb-SemiBold.woff);
+  font-family: titi_Sem;
+}
+@font-face{
+  src: url(../src/fonts/TitilliumWeb-SemiBoldItalic.woff);
+  font-family: titi_Bold_Italic;
+}
+@font-face{
+  src: url(../src/fonts/TitilliumWeb-Black.woff);
+  font-family: titi_Black;
+}
+@font-face{
+  src: url(../src/fonts/TitilliumWeb-Bold.woff);
+  font-family: titi_Bold;
+}
+@font-face{
+  src: url(../src/fonts/Montserrat-Regular.woff);
+  font-family: monteserrat_regular;
+} */

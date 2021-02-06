@@ -1,0 +1,412 @@
+#casino{
+    margin-top: 30px;
+}
+.whiteSubTitle{
+    width: 90%;
+    max-width: 700px;
+    color: white;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+.constructorTree{
+    max-width: 1200px;
+    width: 100%;
+    height: 1000px;
+    /* border: 2px solid white; */
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.tree{
+    width: 5px;
+    height: 900px;
+    background: #1A83FF;
+    position: absolute;
+    border-radius: 3px;
+    top: 50%;
+    right: 50%;
+    transform: translate(0, -50%) ;
+    animation-name: tree;
+    animation-duration: 3s;
+}
+@keyframes tree{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 900px;
+    }
+}
+.branck{
+    width: 3px;
+    height: 200px;
+    background: #1A83FF;
+    position: absolute;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    top: 50%;
+    right: 50%;
+    transform: translate(0, -50%) ;
+    animation-name: branchLev1;
+    animation-duration: 3s;
+}
+.branckLev2{
+    width: 3px;
+    height: 250px;
+    background: #1A83FF;
+    position: absolute;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    top: 50%;
+    right: 50%;
+    transform: translate(0, -50%) ;
+    animation-name: branchLev2;
+    animation-duration: 3s;
+}
+
+.branchCircle{
+    width: 8px;
+    height: 8px;
+    border-radius:  50% ;
+    position: absolute;
+    left: -2.5px;
+    background: #1A83FF ;
+}
+
+
+.pulsating-circle {
+    position: absolute;
+    left: -5.5px;
+    top: -3px;
+    /* transform: translateX(-50%) translateY(-50%); */
+    width: 15px;
+    height: 15px;
+    z-index: 5;
+}
+
+.pulsating-circle:before {
+  content: '';
+  position: relative;
+  display: block;
+  width: 300%;
+  height: 300%;
+  box-sizing: border-box;
+  margin-left: -100%;
+  margin-top: -100%;
+  border-radius: 45px;
+  background-color: #01a4e9;
+  animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.pulsating-circle:after {
+  content: '';
+  position: absolute;
+  left: 0; 
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #1A83FF;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(0,0,0,.3);
+  animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+}
+  
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(.33);
+    }
+    80%, 100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes pulse-dot {
+    0% {
+      transform: scale(.8);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(.8);
+    }
+  }
+
+  .branck11, .branck22, .branck33, .branck44, .branck55{
+    display: block;
+    z-index: 1;
+}
+.branck1{
+    transform: rotate(242deg);
+    top: 469px;
+    right: calc(50% + 88px);
+}
+.branck11{
+    transform: rotate(-90deg);
+    top: 488px;
+    right: calc(50% + 295px);
+    z-index: 0;
+}
+.branck2{
+    transform: rotate(-61deg);
+    top:200px;
+    right: calc(50% + 88px);
+}
+.branck22{
+    transform: rotate(-90deg);
+    top: 130px;
+    right: calc(50% + 294px);
+    z-index: 0;
+}
+.branck3{
+    transform: rotate(-245deg);
+    right: calc(50% + -89px);
+    top: 310px;
+}
+.branck33{
+    transform: rotate(90deg);
+    top: 85px;
+    right: calc(50% + -295px);
+    z-index: 0;
+}
+.branck4{
+    transform: rotate(64deg);
+    top: 625px;
+    right: calc(50% + -89px);
+}
+.branck44{
+    transform: rotate(90deg);
+    top: 559px;
+    right: calc(50% + -296px);
+    z-index: 0;
+    
+}
+.branck5{
+    transform: rotate(64deg);
+    top:150px;
+    right: calc(50% + -88px);
+   
+}
+.branck55{
+    transform: rotate(90deg);
+    top: 325.5px;
+    right: calc(50% + -300px);
+    z-index: 0;
+   
+}
+
+@keyframes branchLev1{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+} 
+@keyframes branchLev2{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} 
+@keyframes branchLev3{
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} 
+.treeText{
+    width: 250px;
+    /* height: 180px; */
+    /* border: 1px solid white; */
+    font-size: 14px;
+    color: white;
+    background: url(./../../images/Group37.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 30px;
+    padding: 0 20px;
+    background-position: center;
+    text-align: center;
+    position: absolute;
+    animation-name: branchLev3;
+    animation-duration: 4s;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+.treeText h4{
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.treeText1{
+    top: 186px;
+    right: calc(50% + 146px);
+}
+.treeText2{
+    top: 140px;
+    right: calc(50% + -435px);
+}
+.treeText3{
+    top: 380px;
+    right: calc(50% + -440px);
+}
+.treeText4{
+    top: 613px;
+    right: calc(50% + -444px);
+}
+.treeText5{
+    top: 540px;
+    right: calc(50% + 145px);
+    animation-name: branchLev3;
+}
+
+
+
+
+
+
+@media all and (max-width:1200px){
+    .particles_ProductsDiv *{
+        display: none;
+    }
+}
+@media all and (max-width:820px){
+    .tree{
+        left: 30px;
+    }
+    .branck11, .branck22, .branck33, .branck44, .branck55{
+        display: none;
+    }
+    .branck1{
+        transform: rotate(90deg);
+        top: 80px;
+        right: 0;
+        left: 180px;
+        height: 300px;
+    }
+    .branck2{
+        transform: rotate(90deg);
+        top: 311px;
+        right: 0;
+        left: 94px;
+        height: 124px;
+    }
+    .branck3{
+        transform: rotate(90deg);
+        right: 0;
+        top: 350px;
+        left: 180px;
+        height: 300px;
+    }
+    .branck4{
+        transform: rotate(90deg);
+        top: 600px;
+        right: 0;
+        left: 68px;
+        height: 74px;
+    }
+    .branck5{
+        transform: rotate(90deg);
+        top:688px;
+        left: 147px;
+        height: 234px;
+    }
+    .treeText1{
+        top: 6px;
+        left: 48px;
+    }
+    .treeText2{
+        top: 249px;
+        left: 133px;
+    }
+    .treeText3{
+        top: 370px;
+        left: 320px;
+    }
+    .treeText4{
+        top: 500px;
+        left: 96px;
+    }
+    .treeText5{
+        top: 685px;
+        left: 253px;
+    }
+}
+
+@media all and (max-width: 600px){
+    .constructorTree{
+        height: 1200px;
+    }
+    .tree{
+        height:900px;
+        top: 500px;
+        left: 15px;
+    }
+    .branck1, .branck2, .branck3, .branck4, .branck5{
+        right: 0;
+        left: 165px;
+        height: 300px;
+    }
+    .branck1{
+        top: -99px;
+    }
+    .branck2{
+        top: 170px;
+        left: 140px;
+        height: 250px;
+    }
+    .branck3{
+        top: 560px;
+    }
+    .branck4{
+        top: 325px;
+        left: 175px;
+        height: 320px;
+    }
+    .branck5{
+        top: 823px;
+        left: 115px;
+        height: 200px;
+    }
+    .treeText1 {
+        top: 40px;
+        left: 28px;
+    }
+    .treeText2 {
+        top: 290px;
+        left: 28px;
+    }
+    .treeText3 {
+        top: 480px;
+        left: 28px;
+    }
+    .treeText4 {
+        top: 700px;
+        left: 28px;
+    }
+    .treeText5 {
+        top: 910px;
+        left: 28px;
+    }
+}

@@ -1,0 +1,71 @@
+.media_blog_component{
+    min-height: 100vh;
+    
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* background-image: url(./../../images/team_back.png); */
+    background-position: center;
+    background-size: 100%;
+}
+.media_blog_div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.media_blog_text, .media_blog_img{
+    max-width: 50%;
+    color: white;
+}
+.media_blog_text p{
+    width: 90%;
+}
+.media_blog_text .titales{
+    font-size: 43px;
+}
+.media_blog_text .titaleDiv{
+    align-items: flex-start;
+}
+.media_blog_content{
+    display: flex;
+    justify-content: space-between;
+}
+@media all and (max-width:1230px){
+    .media_blog_text{
+        padding-left: 60px;
+    }
+    .media_blog_text .titales{
+        font-size:30px;
+    }
+    
+}
+
+@media all and (max-width:950px){
+    .media_blog_content{
+        justify-content: center;
+    }
+    .media_blog_text{
+        max-width:100%;
+        text-align: center;
+        padding: 0 30px;
+        z-index: 2;
+    }
+    .media_blog_text p{
+        width: 100%;
+    }
+    .media_blog_text .titaleDiv{
+        align-items: center;
+    }
+    .media_blog_img{
+        max-width: 100%;
+        position: absolute;
+    }
+    .media_blog_img img {
+        max-width: 80%;
+        min-width: 89%;
+        opacity: .5;
+    }
+}

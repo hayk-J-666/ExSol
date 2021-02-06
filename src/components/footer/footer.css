@@ -1,0 +1,187 @@
+.contactsDiv{
+    width: 100%;
+    background: rgba(0,0,18,0.5);
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 5;
+}
+.contacts{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 10;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    /* position: absolute; */
+    /* bottom: 100px; */
+}
+.contacts_div{
+    display: flex;
+}
+.contacts p{
+    margin: 0;
+}
+
+.contacts_Card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-weight: 700;
+    /* align-items: flex-start; */
+    padding: 15px;
+    color: white;  
+    z-index: 3;
+}
+
+.firsst_P{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    /* margin-bottom: 30px; */
+    font-size: 14px;
+    color: #1A83FF;
+}
+.inset_Input{
+    /* width: 90%; */
+    width: 400px;
+    height: 37px;
+    margin-top: 15px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    border-radius: 10px; 
+    border: none;
+    outline: none;
+    z-index: 3;
+}
+.insetDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 4;
+}
+.contacts_Card>.locationDiv, .contacts_Card>.emailDiv{
+    padding: 0;
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.emailDiv>a, .emailDiv>div>a{
+    text-decoration: none;
+    color: white
+}
+.Footer_logo{
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+/* .contacts_Card>.locationDiv img, .contacts_Card>.emailDiv img{
+    width: 15px;
+    margin-top: 0 ;
+} */
+.mapIcon{
+    max-width: 15px;
+    max-height: 22px;
+    margin-top: 0;
+    height: auto;
+}
+.massegeIcon{
+    max-width: 15px;
+    max-height: 12px;
+    height: auto;
+}
+.contacts_Card .employee_Contacts{
+    justify-content: flex-start;
+}
+
+.contacts_Card .employee_Contacts .employee_iconse a{
+    margin: 0;
+    margin-right: 10px;
+}
+.footer_Menu{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.footer_Menu li{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.footer_Menu li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.insetEmail_footer{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.insetEmail_footer>input{
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #1A83FF ;
+    color: white;
+    outline: none;
+    margin-bottom: 20px;
+    transition: .33s;
+}
+.insetEmail_footer>input:focus{
+    border-bottom: 2px solid #03A7D3 ;
+}
+
+
+.insetEmail_footer h1{
+    margin-bottom: 30px;
+}
+.footerLLC{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 11px;
+}
+.insetEmail_footer>button{
+    margin-right: 0;
+}
+.insetEmail_footer>div{
+ margin: 0;
+}
+
+@media all and (max-width: 690px){
+    .contacts{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .insetEmail_footer>button{
+        margin: 0;
+    }
+
+}
+@media all and (max-width:450px){
+    .contacts p{
+        font-size: 12px;
+    }
+    .inset_Input{
+        width: 80%;
+    }
+}

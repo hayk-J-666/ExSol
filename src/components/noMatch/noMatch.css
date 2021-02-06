@@ -1,0 +1,67 @@
+#error-404{
+    width: 100%;
+    height: calc(100vh - 21px);
+    height: 100vh;
+    background-image: url(./../../images/404.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 111111;
+    position: absolute;
+    top: -21px;
+}
+.error-404{
+    /* height: 200px; */
+    width: 60%;
+    min-width: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 2px solid red; */
+
+}
+.error-404 h1{
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    margin: 0 ;
+    margin-bottom: 15px;
+}
+
+.error-404__number h2{
+    font-size: 160px;
+    margin: 0 ;
+    text-align: center;
+}
+.shadow404{
+    position: relative;
+    color: white;
+}
+.number-404{
+    position: absolute;
+    color: red;
+    /* left: 10px;
+    top: 10px; */
+    top: 120px;
+    left: calc(50% + 10px);
+    transform: translate(-50%,-50%);
+
+}
+.error-btn{
+    /* position: absolute; */
+    margin: 0 auto;
+}
+
+@media all and (max-width: 1200px){
+    .error-404 h1{
+        font-size: 40px;
+        
+    }
+}
+@media all and (max-width: 450px){
+    .error-404 h1{
+        font-size: 16px;
+       
+    }
+}

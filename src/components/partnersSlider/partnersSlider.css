@@ -1,0 +1,26 @@
+.owl-stage-outer {
+    margin-top: 30px;
+    cursor: grab;
+}
+
+.img_Collorless{
+    opacity: 1; 
+}
+.img_Collor{
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.img_Collor:hover {
+    opacity: 1;
+}
+.img_Collorless:hover {
+    opacity: 0;
+}
+
+.partner_Logo{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

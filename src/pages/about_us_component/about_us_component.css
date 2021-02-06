@@ -1,0 +1,112 @@
+.about_Us_wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about_Us_component_big_div{
+    margin-top: 60px;
+    z-index: 10;
+}
+.advantages{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 60px 0;
+    z-index: 3;
+}
+.advantage{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 64px;
+    width: calc(33.3% - 40px);
+    min-width: 275px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.about_Us_wrapper>.team_board{
+    /* width: 100%; */
+    min-height: auto;
+    margin-bottom: 60px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.advantage_img{
+    height: 45px;
+}
+.advantage_text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.qwerty{
+    background: crimson;
+}
+.advantage_text h1, .advantage_text p{
+    max-width: 250px;
+    margin: 5px;
+    padding: 0;
+    font-size: 25px;
+
+}
+.subtitle_About_Us{
+    max-width: 600px;
+    font-size: 18px;
+    text-align: center;
+    color: #999599;
+    margin-bottom: 10px;
+    padding: 0 11px;
+    z-index: 3;
+}
+
+.particles_About_us {
+    width: 100%;
+    height: calc(100% - 60px);
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+}
+.aboutUsBackground{
+    /* width: 100%; */
+    opacity: 0.2;
+    position: fixed;
+}
+.serviceListTitle {
+    font-size: 32;
+    color: white;
+}
+
+.particles_About_us div {
+    height: 100%;
+    opacity: .4;
+    min-width: calc((100% - 1200px) / 2);
+    max-width: calc((100% - 1200px) / 2);
+    z-index: 1;
+}
+@media all and (max-width:1200px){
+    .particles_About_usDiv *{
+            display: none;
+        }
+}
+@media all and (max-width:450px){
+    .subtitle{
+        font-size: 15px;
+    }
+    .advantage_text>h1{
+        font-size: 22px;
+    }
+    .advantage_text>p{
+        margin-bottom: 10px;
+    }
+    
+}
+

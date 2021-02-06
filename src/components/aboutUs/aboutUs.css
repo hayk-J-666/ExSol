@@ -1,0 +1,105 @@
+.wrapper{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.about_Us{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* overflow: hidden; */
+    /* z-index: 1; */
+}
+.about_us_animation{
+    animation-name: about;
+    transform: rotate3d(0, 0, 1, 180deg);
+    animation: about 20s infinite;
+    -webkit-animation: about 20s infinite;
+    -moz-animation:    about 20s infinite;
+    -o-animation:      about 20s infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    border-radius: 50%;
+    opacity: 0.1;
+    /* position: absolute; */
+}
+.about_Us_Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.about_us_text{
+    max-width: 500px;
+    width: 90%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.about_us_animation_Div{
+    width: 100%;
+    position: absolute;
+    /* top: 50%;
+    transform: translate(0, -50%); */
+    /* left: 60%; */
+    right: 60%;
+}
+/* 2662 */
+.frameX_img{
+    width: 50%;
+    height: auto;
+    /* height: 40%; */
+    position: absolute;
+    right: 0;
+    opacity: .6;
+    transform: rotate(180deg);
+    /* border: 2px solid red; */
+    /* display: none; */
+}
+.subtitle{
+    max-width: 500px;
+    font-size: 18px;
+    text-align: center;
+    color: #999599;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.about_as_animation_Div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@keyframes about {
+    0%{
+        transform: rotate(0deg);  
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media all and (max-width:1200px){
+    .wrapper{
+        width: 100%;
+    }
+}
+
+@media all and (max-width:677px){
+    .about_us_text{
+        font-size: 14px;
+    }
+}
+

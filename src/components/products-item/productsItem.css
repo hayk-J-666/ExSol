@@ -1,0 +1,29 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+    color: white;
+}
+.card>img{
+    width: 75% !important;
+}
+.card>h1 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.card_Text {
+    max-width: 250px;
+    min-height: 240px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
+
